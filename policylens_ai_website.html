@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#102b46">
+<title>PolicyLens AI | Government Scheme & Policy Research</title>
+<style>
+:root{--navy:#102b46;--blue:#2157d5;--teal:#14a58a;--ink:#17263b;--muted:#68778b;--bg:#f5f8fc;--line:#e3eaf3;--white:#fff;--gold:#f4b942}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.55}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,92%);margin:auto}
+header{background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;letter-spacing:-.5px}.logo{width:40px;height:40px;display:grid;place-items:center;border-radius:13px;background:linear-gradient(135deg,var(--blue),#6b83ef);color:white;font-size:21px}.brand small{display:block;color:var(--muted);font-size:10px;font-weight:650;letter-spacing:1.6px;text-transform:uppercase}.navlinks{display:flex;gap:25px;align-items:center;color:#45556a;font-size:14px;font-weight:650}.navlinks a:hover{color:var(--blue)}.navcta,.btn{border:0;border-radius:12px;padding:12px 17px;font-weight:750;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}.navcta,.primary{background:var(--blue);color:white}.secondary{background:white;border:1px solid var(--line);color:var(--ink)}.hero{background:radial-gradient(circle at 85% 15%,rgba(66,105,238,.28),transparent 29%),linear-gradient(120deg,#0c223b,#143c5b 65%,#164f62);color:white;padding:76px 0 64px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#c6d7ff;border:1px solid #ffffff35;background:#ffffff0d;padding:7px 12px;border-radius:100px;font-size:12px;font-weight:750;letter-spacing:.5px}.dot{height:7px;width:7px;border-radius:50%;background:#42dfb4}.hero h1{font-size:clamp(36px,5.2vw,61px);line-height:1.06;letter-spacing:-2.3px;margin:22px 0 18px;max-width:680px}.hero h1 span{color:#80e4d1}.hero p{color:#d0dceb;font-size:17px;max-width:620px;margin:0 0 28px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero .secondary{background:#ffffff12;border-color:#ffffff35;color:white}.trustline{margin-top:24px;color:#b7c9dc;font-size:12px}.research-card{background:white;color:var(--ink);border-radius:23px;padding:24px;box-shadow:0 22px 65px #07182e50;transform:rotate(1deg)}.card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.card-top h3{margin:0;font-size:17px}.tag{font-size:11px;font-weight:800;color:#087f68;background:#e2f8f1;border-radius:8px;padding:6px 9px}.promptbox{background:#f5f7fb;border:1px solid var(--line);border-radius:13px;padding:14px;color:#66758b;font-size:13px}.promptbox strong{display:block;color:#263b54;margin-bottom:7px}.mini-results{margin-top:16px;display:grid;gap:10px}.mini-result{display:flex;gap:11px;align-items:center;padding:11px;border:1px solid var(--line);border-radius:12px}.mini-icon{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:#e9efff;font-size:19px}.mini-result b{display:block;font-size:13px}.mini-result small{color:var(--muted);font-size:11px}.confidence{margin-top:15px;padding-top:13px;border-top:1px solid var(--line);font-size:11px;color:var(--muted);display:flex;gap:8px;align-items:center}
+section{padding:68px 0}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:25px}.kicker{font-size:11px;color:var(--blue);font-weight:850;letter-spacing:1.6px;text-transform:uppercase}.section-head h2{font-size:clamp(26px,3.2vw,36px);letter-spacing:-1.1px;margin:7px 0 5px}.section-head p{margin:0;color:var(--muted);max-width:620px}.search-panel{background:white;border:1px solid var(--line);padding:18px;border-radius:18px;display:grid;grid-template-columns:1fr 210px auto;gap:12px;box-shadow:0 8px 25px #1b365408}.field{display:flex;align-items:center;gap:10px;background:#f8faff;border:1px solid var(--line);padding:0 13px;border-radius:11px;min-width:0}.field input,.field select{width:100%;padding:13px 0;background:transparent;border:0;outline:0;color:var(--ink);min-width:0}.field select{cursor:pointer}.result-meta{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin:18px 2px 12px}.scheme-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.scheme{background:white;border:1px solid var(--line);border-radius:17px;padding:20px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.scheme:hover{transform:translateY(-3px);box-shadow:0 15px 35px #102b4610}.scheme-head{display:flex;justify-content:space-between;gap:10px;align-items:start}.scheme-emoji{height:45px;width:45px;display:grid;place-items:center;background:#edf2ff;border-radius:13px;font-size:22px}.category{font-size:10px;letter-spacing:.7px;text-transform:uppercase;font-weight:850;color:#52647b;background:#f1f4f8;border-radius:7px;padding:6px 8px}.scheme h3{font-size:17px;line-height:1.35;margin:17px 0 8px}.scheme p{font-size:13px;color:var(--muted);margin:0 0 15px}.scheme ul{padding-left:18px;margin:0 0 20px;color:#46566b;font-size:12px}.scheme li{margin:5px 0}.scheme-foot{margin-top:auto;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:8px;align-items:center}.scheme-foot span{font-size:11px;color:var(--muted)}.textlink{color:var(--blue);font-size:12px;font-weight:800}.empty{grid-column:1/-1;text-align:center;padding:45px 15px;color:var(--muted);background:white;border:1px dashed var(--line);border-radius:15px;display:none}
+.ai-section{background:#edf3ff}.ai-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:38px;align-items:center}.ai-copy h2{font-size:clamp(28px,3.5vw,39px);line-height:1.15;letter-spacing:-1px;margin:10px 0 15px}.ai-copy p{color:var(--muted)}.feature-list{display:grid;gap:13px;margin-top:23px}.feature{display:flex;gap:12px;align-items:start}.check{width:25px;height:25px;flex-shrink:0;display:grid;place-items:center;background:#d9f7ed;color:#078369;border-radius:8px;font-weight:900}.feature b{display:block;font-size:14px}.feature small{color:var(--muted);font-size:12px}.toolbox{background:white;border:1px solid #dfe7f5;border-radius:20px;padding:23px;box-shadow:0 16px 45px #244b8910}.toolbox h3{margin:0 0 5px}.toolbox>p{margin:0 0 18px;color:var(--muted);font-size:13px}.toolbox label{font-size:12px;font-weight:800;display:block;margin:12px 0 6px}.toolbox input,.toolbox select,.toolbox textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:10px;outline-color:var(--blue);background:#fbfcff}.toolbox textarea{resize:vertical;min-height:90px}.toolbox .btn{width:100%;margin-top:14px}.demo-output{display:none;margin-top:16px;background:#f1f7ff;border:1px solid #dbe8ff;padding:14px;border-radius:12px;font-size:13px}.demo-output h4{margin:0 0 6px}.demo-output p{margin:5px 0;color:#4c5f78}.policy-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.policy-card{background:white;border:1px solid var(--line);border-radius:16px;padding:20px}.policy-card .icon{font-size:24px}.policy-card h3{font-size:16px;margin:13px 0 7px}.policy-card p{font-size:13px;color:var(--muted);margin:0 0 13px}.policy-card a{font-size:12px;color:var(--blue);font-weight:800}.sources{background:#fff8e7;border:1px solid #f3e2b7;border-radius:15px;padding:18px 20px;display:flex;gap:14px;align-items:start;margin-top:26px}.sources strong{display:block;font-size:13px}.sources p{margin:3px 0 0;color:#786742;font-size:12px}.sources a{color:#815b0b;text-decoration:underline;font-weight:750}
+footer{background:#0d2239;color:#d6e1ef;padding:38px 0 22px}.footer-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer-brand{font-weight:850;font-size:17px}.footer-grid p{max-width:440px;color:#a9bbcf;font-size:12px}.footer-links{display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:#d0dced}.copyright{border-top:1px solid #ffffff1b;margin-top:25px;padding-top:16px;color:#8fa5bc;font-size:11px;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:#142c45;color:white;padding:12px 17px;border-radius:12px;font-size:13px;box-shadow:0 10px 30px #0003;display:none;z-index:30}
+@media(max-width:900px){.hero-grid,.ai-grid{grid-template-columns:1fr}.hero-grid{gap:36px}.research-card{max-width:560px;transform:none}.scheme-grid,.policy-grid{grid-template-columns:repeat(2,1fr)}.navlinks{gap:13px}.navlinks a:not(.navcta){display:none}}
+@media(max-width:620px){.nav{height:65px}.brand{font-size:14px}.logo{width:36px;height:36px}.navcta{padding:10px 12px;font-size:12px}.hero{padding:52px 0 45px}.hero h1{letter-spacing:-1.4px}.hero p{font-size:15px}.section-head{align-items:start;flex-direction:column}.search-panel{grid-template-columns:1fr}.scheme-grid,.policy-grid{grid-template-columns:1fr}section{padding:48px 0}.hero-actions .btn{flex:1}.copyright{flex-direction:column}.toolbox{padding:17px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home" aria-label="PolicyLens AI home"><span class="logo">⌕</span><span>PolicyLens AI<small>Public policy, made clear</small></span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#schemes">Find schemes</a><a href="#research">AI research</a><a href="#policies">Policy library</a><a class="navcta" href="#schemes">Explore schemes ↗</a></nav>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow"><span class="dot"></span> AI-ASSISTED PUBLIC INFORMATION</div>
+   <h1>Government schemes.<br><span>Clearer for everyone.</span></h1>
+   <p>Discover public welfare schemes, understand policy documents, and get a practical starting point for your research—with official sources close at hand.</p>
+   <div class="hero-actions"><a class="btn primary" href="#schemes">Explore schemes <span>→</span></a><a class="btn secondary" href="#research">Try research assistant ✦</a></div>
+   <div class="trustline">Designed for citizens, students, researchers and public-service teams.</div>
+  </div>
+  <div class="research-card">
+   <div class="card-top"><h3>Research snapshot</h3><span class="tag">SOURCE-FIRST</span></div>
+   <div class="promptbox"><strong>✦ Ask a policy question</strong>“What support is available for students from low-income families?”</div>
+   <div class="mini-results">
+    <div class="mini-result"><div class="mini-icon">🎓</div><div><b>Education support</b><small>Scholarships and student assistance</small></div></div>
+    <div class="mini-result"><div class="mini-icon">🌾</div><div><b>Farmer welfare</b><small>Income support and agriculture services</small></div></div>
+    <div class="mini-result"><div class="mini-icon">🏥</div><div><b>Health coverage</b><small>Public health and insurance programmes</small></div></div>
+   </div>
+   <div class="confidence"><span>🔎</span><span>Always check current rules, eligibility and dates on the official portal.</span></div>
+  </div>
+ </div>
+</section>
+<section id="schemes">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">Scheme explorer</div><h2>Find support that fits your needs</h2><p>Search a starter directory of well-known Indian government programmes. Confirm current eligibility and application status with the official source.</p></div></div>
+  <div class="search-panel">
+   <div class="field"><span>⌕</span><input id="searchInput" type="search" placeholder="Search schemes, benefits or keywords…" aria-label="Search schemes"></div>
+   <div class="field"><span>▦</span><select id="categoryFilter" aria-label="Filter by category"><option value="all">All categories</option><option value="Agriculture">Agriculture</option><option value="Health">Health</option><option value="Education">Education</option><option value="Housing">Housing</option><option value="Finance">Finance</option><option value="Employment">Employment</option></select></div>
+   <button class="btn primary" id="searchBtn">Search</button>
+  </div>
+  <div class="result-meta"><span id="resultCount">6 programmes shown</span><span>Illustrative directory · Verify before applying</span></div>
+  <div class="scheme-grid" id="schemeGrid">
+   <article class="scheme" data-category="Agriculture" data-search="pm kisan agriculture farmer income support direct benefit">
+    <div class="scheme-head"><div class="scheme-emoji">🌾</div><span class="category">Agriculture</span></div><h3>PM-KISAN</h3><p>Income-support programme for eligible landholding farmer families, subject to scheme rules.</p><ul><li>Farmer-focused assistance</li><li>Eligibility and exclusions apply</li></ul><div class="scheme-foot"><span>Central government</span><a class="textlink" href="https://pmkisan.gov.in/" target="_blank" rel="noopener">Official website ↗</a></div>
+   </article>
+   <article class="scheme" data-category="Health" data-search="ayushman bharat pm jay health hospital coverage healthcare">
+    <div class="scheme-head"><div class="scheme-emoji">🏥</div><span class="category">Health</span></div><h3>Ayushman Bharat – PM-JAY</h3><p>Publicly funded health assurance for eligible beneficiaries under programme guidelines.</p><ul><li>Hospitalisation coverage for eligible families</li><li>Check beneficiary status and local availability</li></ul><div class="scheme-foot"><span>Health protection</span><a class="textlink" href="https://pmjay.gov.in/" target="_blank" rel="noopener">Official website ↗</a></div>
+   </article>
+   <article class="scheme" data-category="Education" data-search="national scholarship portal education students scholarship financial aid">
+    <div class="scheme-head"><div class="scheme-emoji">🎓</div><span class="category">Education</span></div><h3>National Scholarship Portal</h3><p>A central platform for discovering and applying to participating scholarship schemes.</p><ul><li>Scholarship listings and applications</li><li>Requirements differ by scheme</li></ul><div class="scheme-foot"><span>Student support</span><a class="textlink" href="https://scholarships.gov.in/" target="_blank" rel="noopener">Official website ↗</a></div>
+   </article>
+   <article class="scheme" data-category="Housing" data-search="pm awas yojana housing home rural urban affordable housing">
+    <div class="scheme-head"><div class="scheme-emoji">🏠</div><span class="category">Housing</span></div><h3>Pradhan Mantri Awas Yojana</h3><p>Housing support delivered through programme components for eligible households.</p><ul><li>Rural and urban components differ</li><li>Local criteria and application windows apply</li></ul><div class="scheme-foot"><span>Housing support</span><a class="textlink" href="https://pmay-urban.gov.in/" target="_blank" rel="noopener">Official website ↗</a></div>
+   </article>
+   <article class="scheme" data-category="Finance" data-search="pradhan mantri jan dhan yojana bank account financial inclusion">
+    <div class="scheme-head"><div class="scheme-emoji">🏦</div><span class="category">Finance</span></div><h3>Pradhan Mantri Jan-Dhan Yojana</h3><p>Financial-inclusion initiative supporting access to basic banking services.</p><ul><li>Basic banking access</li><li>Account features and benefits have conditions</li></ul><div class="scheme-foot"><span>Financial inclusion</span><a class="textlink" href="https://pmjdy.gov.in/" target="_blank" rel="noopener">Official website ↗</a></div>
+   </article>
+   <article class="scheme" data-category="Employment" data-search="mahatma gandhi national rural employment guarantee act mgnrega work rural livelihood">
+    <div class="scheme-head"><div class="scheme-emoji">🧰</div><span class="category">Employment</span></div><h3>MGNREGA</h3><p>Rural employment guarantee framework implemented through local authorities.</p><ul><li>Work demand and job-card processes</li><li>Contact your Gram Panchayat for local details</li></ul><div class="scheme-foot"><span>Rural livelihoods</span><a class="textlink" href="https://nrega.nic.in/" target="_blank" rel="noopener">Official website ↗</a></div>
+   </article>
+   <div class="empty" id="emptyState">No matching schemes. Try a different keyword or category.</div>
+  </div>
+  <div class="sources"><div>⚠️</div><div><strong>Important: information, not an eligibility decision</strong><p>This starter directory is not a live government database. Scheme rules, benefits, deadlines and portals can change. Use the official links above and the <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">myScheme portal</a> to verify details.</p></div></div>
+ </div>
+</section>
+<section class="ai-section" id="research">
+ <div class="wrap ai-grid">
+  <div class="ai-copy"><div class="kicker">AI research assistant</div><h2>Turn policy questions into a research plan.</h2><p>Use this interactive demo to structure a question, identify what needs checking, and prepare focused research. This front-end demo does not call an AI model or submit your information to a server.</p>
+   <div class="feature-list">
+    <div class="feature"><span class="check">✓</span><div><b>Plain-language summaries</b><small>Make complex policy terms easier to understand.</small></div></div>
+    <div class="feature"><span class="check">✓</span><div><b>Eligibility questions</b><small>Organise the criteria you need to verify.</small></div></div>
+    <div class="feature"><span class="check">✓</span><div><b>Source-first research</b><small>Prioritise official portals, notifications and policy documents.</small></div></div>
+   </div>
+  </div>
+  <div class="toolbox">
+   <h3>Build your research brief ✦</h3><p>Enter a topic to generate a local demo research checklist.</p>
+   <label for="topic">Research topic</label><input id="topic" placeholder="e.g. scholarships for college students">
+   <label for="audience">Who is this for?</label><select id="audience"><option>Citizen / applicant</option><option>Student / researcher</option><option>Policy analyst</option><option>Community organisation</option></select>
+   <label for="region">Region or state (optional)</label><input id="region" placeholder="e.g. Tamil Nadu">
+   <label for="question">What do you want to find out?</label><textarea id="question" placeholder="e.g. eligibility, benefits, required documents, deadlines…"></textarea>
+   <button class="btn primary" id="generateBtn">Create research checklist ↗</button>
+   <div class="demo-output" id="demoOutput" aria-live="polite"></div>
+  </div>
+ </div>
+</section>
+<section id="policies">
+ <div class="wrap">
+  <div class="section-head"><div><div class="kicker">Policy library</div><h2>Start with authoritative sources</h2><p>Explore official portals and use them as the foundation for research, citations and policy comparisons.</p></div></div>
+  <div class="policy-grid">
+   <article class="policy-card"><div class="icon">🇮🇳</div><h3>National Portal of India</h3><p>Government information, services and links to official resources.</p><a href="https://www.india.gov.in/" target="_blank" rel="noopener">Visit India.gov.in ↗</a></article>
+   <article class="policy-card"><div class="icon">🧭</div><h3>myScheme</h3><p>Explore government schemes and check information relevant to your circumstances.</p><a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">Explore myScheme ↗</a></article>
+   <article class="policy-card"><div class="icon">📜</div><h3>India Code</h3><p>Search central acts, rules and legal materials published in the official database.</p><a href="https://www.indiacode.nic.in/" target="_blank" rel="noopener">Search India Code ↗</a></article>
+   <article class="policy-card"><div class="icon">📊</div><h3>Open Government Data</h3><p>Discover public datasets for evidence-based analysis and research projects.</p><a href="https://www.data.gov.in/" target="_blank" rel="noopener">Explore datasets ↗</a></article>
+   <article class="policy-card"><div class="icon">🏛️</div><h3>PIB</h3><p>Read official government press releases and announcements.</p><a href="https://pib.gov.in/" target="_blank" rel="noopener">Read press releases ↗</a></article>
+   <article class="policy-card"><div class="icon">📚</div><h3>Parliament of India</h3><p>Find parliamentary proceedings, bills and legislative information.</p><a href="https://sansad.in/" target="_blank" rel="noopener">Visit Parliament ↗</a></article>
+  </div>
+ </div>
+</section>
+</main>
+<footer>
+ <div class="wrap">
+  <div class="footer-grid"><div><div class="footer-brand">⌕ PolicyLens AI</div><p>Making public information easier to explore. Independent research interface; not an official government website and not affiliated with any government department.</p></div><div class="footer-links"><a href="#schemes">Scheme explorer</a><a href="#research">AI research</a><a href="#policies">Policy library</a><a href="https://www.india.gov.in/" target="_blank" rel="noopener">Official portal ↗</a></div></div>
+  <div class="copyright"><span>© 2026 PolicyLens AI · Demo website</span><span>Verify all details with official government sources before taking action.</span></div>
+ </div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+const searchInput=document.getElementById('searchInput'), categoryFilter=document.getElementById('categoryFilter');
+const cards=[...document.querySelectorAll('.scheme')], emptyState=document.getElementById('emptyState'), resultCount=document.getElementById('resultCount');
+function filterSchemes(){const q=searchInput.value.toLowerCase().trim(),cat=categoryFilter.value;let n=0;cards.forEach(card=>{const matchText=(card.innerText+' '+card.dataset.search).toLowerCase().includes(q);const matchCat=cat==='all'||card.dataset.category===cat;card.style.display=matchText&&matchCat?'flex':'none';if(matchText&&matchCat)n++});emptyState.style.display=n?'none':'block';resultCount.textContent=`${n} programme${n===1?'':'s'} shown`}
+document.getElementById('searchBtn').addEventListener('click',filterSchemes);searchInput.addEventListener('input',filterSchemes);categoryFilter.addEventListener('change',filterSchemes);searchInput.addEventListener('keydown',e=>{if(e.key==='Enter')filterSchemes()});
+document.getElementById('generateBtn').addEventListener('click',()=>{const topic=document.getElementById('topic').value.trim(),audience=document.getElementById('audience').value,region=document.getElementById('region').value.trim(),question=document.getElementById('question').value.trim(),out=document.getElementById('demoOutput');if(!topic){showToast('Please enter a research topic first.');document.getElementById('topic').focus();return}out.style.display='block';out.innerHTML=`<h4>Research brief: ${escapeHtml(topic)}</h4><p><b>Audience:</b> ${escapeHtml(audience)}</p><p><b>Region:</b> ${escapeHtml(region||'India / not specified')}</p><p><b>Research question:</b> ${escapeHtml(question||'What is the purpose, eligibility, benefit and application process?')}</p><p><b>Checklist:</b> Find the official scheme guideline; confirm eligibility and exclusions; record benefit amounts and dates; list required documents; verify application steps; note the source URL and date accessed; cross-check with a second official source where possible.</p><p><b>Suggested starting points:</b> <a href="https://www.myscheme.gov.in/" target="_blank" rel="noopener">myScheme</a> · <a href="https://www.india.gov.in/" target="_blank" rel="noopener">India.gov.in</a> · <a href="https://pib.gov.in/" target="_blank" rel="noopener">PIB</a></p><p><i>Demo output only. No AI model was called and no information was sent to a server.</i></p>`;out.scrollIntoView({behavior:'smooth',block:'nearest'})});
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function showToast(s){const t=document.getElementById('toast');t.textContent=s;t.style.display='block';setTimeout(()=>t.style.display='none',2600)}
+</script>
+</body>
+</html>
